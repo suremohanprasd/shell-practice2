@@ -3,8 +3,18 @@
 PERSON1=$1
 PERSON2=$2
 
-echo "Hi Mohan Please Enter your PIN"
+echo "What is your name?"
 
-read -s PIN
+read NAME
 
-echo "Yor PIN number is : $PIN"
+echo "Where are you from?"
+
+read FROM
+
+echo "What is yor age?"
+
+read AGE
+
+echo "Your name is : $NAME"
+echo "Your from : $FROM"
+echo "Your age is : $AGE"
