@@ -1,20 +1,15 @@
 #!/bin/bash
 
-PERSON1=$1
-PERSON2=$2
+TIMESTAMP=$(date)
 
-echo "What is your name?"
+echo "Script run at the time of $TIMESTAMP"
 
-read NAME
+echo "Please enter first number"
 
-echo "Where are you from?"
+read NUM1
 
-read FROM
+echo "Please enter second number"
 
-echo "What is yor age?"
+read NUM2
 
-read AGE
-
-echo "Your name is : $NAME"
-echo "Your from : $FROM"
-echo "Your age is : $AGE"
+echo "Addition of two NUM1 and NUM2 is : $(($NUM1)+($NUM2))"
