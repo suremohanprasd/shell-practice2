@@ -2,12 +2,12 @@
 
 TIMESTAMP=$(date)
 
-echo "Script run at the time of $TIMESTAMP"
-
-NAMES=("Mohan" "Sandeep" "Sai" "Sumanth" "Ashok")
-
-echo "First name is : ${NAMES[0]}"
-echo "Second name is : ${NAMES[1]}"
-echo "Third name is : ${NAMES[2]}"
-echo "Fouth name is : ${NAMES[3]}"
-echo "Fifth name is : ${NAMES[4]}"
+echo "We no need declare the variable, shell will provide variable t us : $1"
+echo "No of variables passed to the script : $@"
+echo "Script Name : $0"
+echo "Current directory : $PWD"
+echo "User running the script : $USER"
+echo "Home directory of the user : $HOME"
+echo "PID of the script : $$"
+sleep 100 &
+echo "PID of the last command in background : $!"
