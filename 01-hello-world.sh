@@ -5,6 +5,6 @@ PERSON2=$2
 
 echo "Hi Mohan Please Enter your PIN"
 
-read PIN
+read -s PIN
 
 echo "Yor PIN number is : $PIN"
